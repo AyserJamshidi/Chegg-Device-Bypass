@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Chegg Device Count Bypass",
+  "version": "0.0.1",
+  "description": "Removes Chegg's device registration limit pop-up and adds back scrolling on any page.",
+  "homepage_url": "https://www.Ayser.tech",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["*://*.chegg.com/*"],
+      "js": ["src/main.js"]
+    }
+  ],
+  "page_action": {
+    "default_title": "Chegg"
+  }
+}
